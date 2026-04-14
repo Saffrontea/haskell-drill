@@ -1,0 +1,22 @@
+name: haskell-drill
+version: 0.1.0.0
+
+language: GHC2021
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+tests:
+  haskell-drill-test:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - haskell-drill
+      - hspec
+    build-tools:
+      - hspec-discover
+    ghc-options:
+      - -Wall

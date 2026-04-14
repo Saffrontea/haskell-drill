@@ -1,0 +1,37 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-drill
+version:        0.1.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Drill.D01Basics.Hello
+  other-modules:
+      Paths_haskell_drill
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: GHC2021
+
+test-suite haskell-drill-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Drill.D01Basics.HelloSpec
+      Paths_haskell_drill
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-tool-depends:
+      hspec-discover:hspec-discover
+  build-depends:
+      base >=4.7 && <5
+    , haskell-drill
+    , hspec
+  default-language: GHC2021
