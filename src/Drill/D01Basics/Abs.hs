@@ -6,4 +6,7 @@ module Drill.D01Basics.Abs where
 --   myAbs (-3) == 3
 --   myAbs 0    == 0
 myAbs :: Int -> Int
-myAbs = undefined
+myAbs
+ x | x<0 = -x
+ | otherwise = x
+-- otherwiseを用いると関数のマッチパターン以外のデフォルトの式を定められる

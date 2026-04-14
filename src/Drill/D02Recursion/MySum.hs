@@ -6,4 +6,9 @@ module Drill.D02Recursion.MySum where
 --   mySum [1,2,3]   == 6
 --   mySum [1..100]  == 5050
 mySum :: [Int] -> Int
-mySum = undefined
+mySum [] = 0
+mySum (x:xs) = x + mySum xs
+-- (x:xs)でx=先頭の要素,xs=それ以外のListにできる
+-- (x:y:xs)のようにすることで複数値もできる
+-- sumは実際にはfoldlの畳み込みで実装できる
+-- mySum list = foldl (+) 0 list
