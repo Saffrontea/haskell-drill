@@ -10,7 +10,19 @@ build-type:     Simple
 
 library
   exposed-modules:
+      Drill.D01Basics.Abs
+      Drill.D01Basics.FizzBuzz
       Drill.D01Basics.Hello
+      Drill.D01Basics.MaxMin
+      Drill.D02Recursion.Factorial
+      Drill.D02Recursion.Fibonacci
+      Drill.D02Recursion.MySum
+      Drill.D02Recursion.Power
+      Drill.D03Lists.MyFilter
+      Drill.D03Lists.MyFoldl
+      Drill.D03Lists.MyLength
+      Drill.D03Lists.MyMap
+      Drill.D03Lists.MyReverse
   other-modules:
       Paths_haskell_drill
   hs-source-dirs:
@@ -23,7 +35,19 @@ test-suite haskell-drill-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Drill.D01Basics.AbsSpec
+      Drill.D01Basics.FizzBuzzSpec
       Drill.D01Basics.HelloSpec
+      Drill.D01Basics.MaxMinSpec
+      Drill.D02Recursion.FactorialSpec
+      Drill.D02Recursion.FibonacciSpec
+      Drill.D02Recursion.MySumSpec
+      Drill.D02Recursion.PowerSpec
+      Drill.D03Lists.MyFilterSpec
+      Drill.D03Lists.MyFoldlSpec
+      Drill.D03Lists.MyLengthSpec
+      Drill.D03Lists.MyMapSpec
+      Drill.D03Lists.MyReverseSpec
       Paths_haskell_drill
   hs-source-dirs:
       test
