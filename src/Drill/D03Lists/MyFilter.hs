@@ -6,4 +6,8 @@ module Drill.D03Lists.MyFilter where
 --   myFilter (>3) [1..5]    == [4,5]
 --   myFilter null [[],[1]]  == [[]]
 myFilter :: (a -> Bool) -> [a] -> [a]
-myFilter = undefined
+myFilter _ [] = []
+myFilter f (x:xs)
+ | f x = x:myFilter f xs
+ | otherwise = myFilter f xs
+ -- fがtrueかどうかで処理が変わるのを再帰的に適用することでfilterを実装できる

@@ -6,4 +6,8 @@ module Drill.D03Lists.MyLength where
 --   myLength [1,2,3]   == 3
 --   myLength "hello"   == 5
 myLength :: [a] -> Int
-myLength = undefined
+myLength [] = 0
+myLength (_:xs) = 1 + myLength xs
+-- 使わない値は_で暗黙化できる
+-- []のlengthは0なので、xsが存在せず、Pattern Matchがfailする
+-- StringはCharのListであるため、Listのlengthの実装で長さを測ることができる

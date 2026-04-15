@@ -6,4 +6,6 @@ module Drill.D03Lists.MyMap where
 --   myMap (*2) [1,2,3]    == [2,4,6]
 --   myMap even [1,2,3,4]  == [False,True,False,True]
 myMap :: (a -> b) -> [a] -> [b]
-myMap = undefined
+myMap _ [] = []
+myMap f (x:xs) = f x : myMap f xs
+-- 特にコメントすることはないが、mapは基本形の操作なので、簡単に実装できる
