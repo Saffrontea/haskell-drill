@@ -23,6 +23,23 @@ library
       Drill.D03Lists.MyLength
       Drill.D03Lists.MyMap
       Drill.D03Lists.MyReverse
+      Drill.D04Maybe.CatMaybes
+      Drill.D04Maybe.FromMaybe
+      Drill.D04Maybe.SafeDiv
+      Drill.D04Maybe.SafeHead
+      Drill.D05DataTypes.Perimeter
+      Drill.D05DataTypes.Shape
+      Drill.D05DataTypes.Tree
+      Drill.D05DataTypes.TreeInsert
+      Drill.D05DataTypes.TreeToList
+      Drill.D06TypeClasses.Describable
+      Drill.D06TypeClasses.MyEq
+      Drill.D06TypeClasses.MyFunctor
+      Drill.D06TypeClasses.MyOrd
+      Drill.D07Monad.EitherValidation
+      Drill.D07Monad.MaybeChain
+      Drill.D07Monad.MySequence
+      Drill.D07Monad.SimpleIO
   other-modules:
       Paths_haskell_drill
   hs-source-dirs:
@@ -48,6 +65,23 @@ test-suite haskell-drill-test
       Drill.D03Lists.MyLengthSpec
       Drill.D03Lists.MyMapSpec
       Drill.D03Lists.MyReverseSpec
+      Drill.D04Maybe.CatMaybesSpec
+      Drill.D04Maybe.FromMaybeSpec
+      Drill.D04Maybe.SafeDivSpec
+      Drill.D04Maybe.SafeHeadSpec
+      Drill.D05DataTypes.PerimeterSpec
+      Drill.D05DataTypes.ShapeSpec
+      Drill.D05DataTypes.TreeInsertSpec
+      Drill.D05DataTypes.TreeSpec
+      Drill.D05DataTypes.TreeToListSpec
+      Drill.D06TypeClasses.DescribableSpec
+      Drill.D06TypeClasses.MyEqSpec
+      Drill.D06TypeClasses.MyFunctorSpec
+      Drill.D06TypeClasses.MyOrdSpec
+      Drill.D07Monad.EitherValidationSpec
+      Drill.D07Monad.MaybeChainSpec
+      Drill.D07Monad.MySequenceSpec
+      Drill.D07Monad.SimpleIOSpec
       Paths_haskell_drill
   hs-source-dirs:
       test
